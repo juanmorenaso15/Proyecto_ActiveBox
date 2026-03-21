@@ -119,3 +119,59 @@ main {
 .section-two-two {
     padding: 50px 0 0 0;
 }
+
+/* ----------------------------------section-three------------------------------------------------------- */
+
+.section-three-div{
+    display: grid;
+    margin: 100px auto;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 0;
+    width: 100%;
+    margin: auto;
+}
+
+.section-three-one{
+    position: relative; /*para que el texto se poscione dentro*/
+    overflow: hidden; /*para que nada se salga del cuadro*/
+    aspect-ratio: 1/1; /*hae que los cuadros se vean perfectamente cuadrados*/
+}
+
+.section-three-one img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /*Ajusta la imagen para que llene el cuadro sin deformarse*/
+}
+
+.section-three-text{
+    position: absolute; /*es para sairse de la caja y flota y como es absoluto enaja en el caja porque el elemento debe de tener relative*/
+    top: 0; /*es para que se pegue en la esquina superior izquierda del cuadro de la imagen*/
+    left: 0; /*es para que se pegue en la esquina superior izquierda del cuadro de la imagen*/
+    width: 100%; /*es para que tengan el mismo tamaño de la imagen*/
+    height: 100%; /*es para que tengan el mismo tamaño de la imagen*/
+    background-color: rgba(212, 64, 64, 0.9);
+    color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    opacity: 0; /* es para qu ela capa sea invisible*/
+    transition: opacity 0.4s ease; /*ease es para que la transicion se vea elegante*/
+    text-align: center;
+    padding: 20px;
+}
+
+.section-three-one:hover .section-three-text{
+    opacity: 1;
+}
+
+.section-three-text h4{
+    margin: 0;
+    font-size: 1.2rem;
+    letter-spacing: 2px;
+}
+
+.section-three-text p{
+    margin-top: 10px;
+    font-size: 0.9rem;
+}
