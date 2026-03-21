@@ -21,6 +21,7 @@ main {
         "section-three"
         "section-four"
         "section-five"
+        "section-six"
         "footer";
 }
 
@@ -220,27 +221,27 @@ main {
 /* ----------------------------------section-five------------------------------------------------------- */
 
 
-.section-five-div{
+.section-five-div {
     display: grid;
     grid-template-columns: 60% 40%;
     width: 100%;
     align-items: center;
-    background-color:#533449 ;
+    background-color: #533449;
 }
 
-.section-five-img img{
+.section-five-img img {
     width: 100%;
     height: auto;
     display: block;
 }
 
 
-.section-five-text{
+.section-five-text {
     padding: 40px 100px;
     color: #ffffff;
 }
 
-.section-five-text p{
+.section-five-text p {
     font-size: 2rem;
     font-family: 'Cardo';
     font-style: italic;
@@ -248,7 +249,7 @@ main {
     margin-bottom: 20px;
 }
 
-.section-five-p2 p{
+.section-five-p2 p {
     font-size: 1rem;
     font-weight: bold;
     font-family: "Open Sans", sans-serif;
@@ -257,21 +258,48 @@ main {
 }
 
 .section-five-circle {
-    display: grid;  
+    display: grid;
     grid-template-columns: repeat(5, 0.0fr);
     gap: 15px;
-    margin: 50px 100px; 
+    margin: 50px 100px;
 }
 
-.dot {
-    width: 20px;        
-    height: 20px;       
+.circle {
+    width: 20px;
+    height: 20px;
     background-color: #745c6d;
     border-radius: 50%;
     cursor: pointer;
 }
 
 
-.dot.active {
+.circle.white {
     background-color: #ffffff;
+}
+
+/* ----------------------------------section-six------------------------------------------------------- */
+
+.section-six-div {
+    margin: 20px auto;
+    text-align: center;
+    font-family: 'Raleway', sans-serif;
+
+}
+
+.section-six-div h2 {
+    margin-bottom: 20px;
+    color: #3a3939;
+    font-weight: normal;
+}
+
+.section-six-div p {
+    margin-bottom: 50px;
+    font-weight: bold;
+}
+
+.section-six-div a {
+    color: white;
+    text-decoration: none;
+    background-color: #e94547;
+    padding: 15px 60px;
 }
