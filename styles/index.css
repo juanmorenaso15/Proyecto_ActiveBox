@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
 * {
     margin: 0;
     padding: 0;
@@ -5,7 +7,7 @@
 }
 
 body {
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: "Open Sans", sans-serif;
     line-height: 1.3;
 
 }
@@ -16,8 +18,8 @@ main {
     grid-template-areas:
         "header-todo"
         "section-two"
-        "gallery"
-        "teammates"
+        "section-three"
+        "section-four"
         "erda"
         "footer";
 }
@@ -168,10 +170,38 @@ main {
 .section-three-text h4{
     margin: 0;
     font-size: 1.2rem;
-    letter-spacing: 2px;
 }
 
 .section-three-text p{
     margin-top: 10px;
     font-size: 0.9rem;
+}
+
+/* ----------------------------------section-four------------------------------------------------------- */
+
+.section-four-div{
+    display: grid;
+    margin: 100px 0 0 75px;
+    grid-template-columns: repeat(4, 0.3fr);
+}
+
+.section-four-one h3{
+    margin: 20px 0;
+    font-family: 'Raleway', sans-serif;
+    font-weight: normal;
+    font-size: 25px;
+    color: #5a5d5e;
+}
+
+.section-four-one h4{
+    font-family: 'Raleway', sans-serif;
+    font-weight: normal;
+    font-size: 25px;
+    color: #df6670;
+}
+
+.section-four-one p{
+    font-family: 'Raleway', sans-serif;
+    color: #7f7f80;
+    padding: 0 0 50px 0;
 }
