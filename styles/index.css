@@ -218,6 +218,14 @@ main {
     padding: 0 0 50px 0;
 }
 
+.section-four-one-img{
+    display: grid;
+    grid-template-columns: repeat(3, 0.0fr);
+    gap: 20px;
+}
+
+
+
 /* ----------------------------------section-five------------------------------------------------------- */
 
 
