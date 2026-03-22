@@ -218,7 +218,7 @@ main {
     padding: 0 0 50px 0;
 }
 
-.section-four-one-img{
+.section-four-one-img {
     display: grid;
     grid-template-columns: repeat(3, 0.0fr);
     gap: 20px;
@@ -337,7 +337,7 @@ main {
     grid-template-columns: repeat(3, 0.1fr);
     gap: 10px;
     margin-top: 20px;
-    margin-left: 148px;
+    margin-left: 165px;
 }
 
 .section-seven-img img {
@@ -350,12 +350,12 @@ main {
 
 /* ----------------------------------section-footer------------------------------------------------------- */
 
-footer{
+footer {
     background-color: #303555;
     height: 20vh;
 }
 
-.footer-div{
+.footer-div {
     text-align: center;
     font-size: 25px;
     color: #6a6b7b;
@@ -363,19 +363,127 @@ footer{
 
 }
 
-.footer-div h5{
+.footer-div h5 {
     font-weight: 500;
     margin-bottom: 20px;
 }
 
-.footer-div h6{
+.footer-div h6 {
     font-weight: 500;
 
     margin-bottom: 20px;
 }
 
-.footer-div h6 span{
+.footer-div h6 span {
 
     margin-bottom: 20px;
     color: #ffffff;
+}
+
+
+/*-----------------------------------------------------------@media-----------------------------------------------------------------------*/
+
+
+
+/*---------------------------------------------------------------------------1643-----------------------------------------------------------------------------------------*/
+
+
+@media screen and (max-width: 1644px){
+
+/* --------section-seven---------------- */
+
+    .section-seven-img {
+    margin-left: 122px;
+}
+}
+
+/*----------------------------------------------------------------------------1560-------------------------------------------------------------------------------------------*/
+
+
+
+@media screen and (max-width: 1560px) {
+
+/* --------section-four---------------- */
+
+    .section-four-div {
+        margin: 100px 0 0 50px;
+        grid-template-columns: repeat(4, 0.0fr);
+        gap: 10px;
+    }
+
+
+    .section-four-one h4 {
+        font-size: 22px;
+    }
+
+    .section-four-one p {
+        font-size: 15px;
+
+    }
+
+    .section-four-one-img {
+        display: grid;
+        grid-template-columns: repeat(3, 0.0fr);
+        gap: 20px;
+    }
+
+}
+
+
+
+
+/*--------------------------------------------------------------------------------1368-------------------------------------------------------------------------------------*/
+
+
+
+@media screen and (max-width: 1560px) {
+.container {
+    padding: 50px 80px;
+}
+
+
+/* ------------------HEADER------------ */
+.header-todo {
+    padding: 50px 200px;
+}
+
+
+.centro-header {
+    margin: 100px auto;
+}
+
+
+/* ---------section-two----------------- */
+
+
+.section-two-div {
+    gap: 100px;
+    padding: 50px 120px;
+}
+
+/* --------section-five---------------- */
+
+
+.section-five-div {
+    grid-template-columns: 55% 45%;
+}
+
+
+/* ---------section-seven------------- */
+
+.section-seven-img {
+    display: grid;
+    grid-template-columns: repeat(3, 0.1fr);
+    gap: 10px;
+    margin-top: 20px;
+    margin-left: 115px;
+}
+
+/* --------section-footer------------- */
+
+footer {
+    background-color: #303555;
+    height: 25vh;
+}
+
 }
