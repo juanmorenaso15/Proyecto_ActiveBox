@@ -9,7 +9,6 @@
 body {
     font-family: "Open Sans", sans-serif;
     line-height: 1.3;
-
 }
 
 main {
@@ -22,6 +21,7 @@ main {
         "section-four"
         "section-five"
         "section-six"
+        "section-seven"
         "footer";
 }
 
@@ -49,11 +49,11 @@ main {
     bottom: 0;
     z-index: 0;
     opacity: .9;
-
 }
 
 .nav-header {
-    display: flex;
+    display: grid;
+    grid-template-columns: repeat(2, auto);
     align-items: center;
     position: relative;
     justify-content: space-between;
@@ -62,7 +62,8 @@ main {
 }
 
 .lu-header ul {
-    display: flex;
+    display: grid;
+    grid-template-columns: repeat(5, auto);
     justify-content: space-around;
     gap: 30px;
     list-style: none;
@@ -224,10 +225,7 @@ main {
     gap: 20px;
 }
 
-
-
 /* ----------------------------------section-five------------------------------------------------------- */
-
 
 .section-five-div {
     display: grid;
@@ -269,7 +267,7 @@ main {
     display: grid;
     grid-template-columns: repeat(5, 0.0fr);
     gap: 15px;
-    margin: 50px 100px;
+    margin: 50px auto;
 }
 
 .circle {
@@ -279,7 +277,6 @@ main {
     border-radius: 50%;
     cursor: pointer;
 }
-
 
 .circle.white {
     background-color: #ffffff;
@@ -383,107 +380,601 @@ footer {
 
 /*-----------------------------------------------------------@media-----------------------------------------------------------------------*/
 
-
-
-/*---------------------------------------------------------------------------1643-----------------------------------------------------------------------------------------*/
-
-
-@media screen and (max-width: 1644px){
-
-/* --------section-seven---------------- */
-
+/* -------------------------------------------------------1643------------------------------------------------------- */
+@media screen and (max-width: 1644px) {
     .section-seven-img {
-    margin-left: 122px;
-}
-}
-
-/*----------------------------------------------------------------------------1560-------------------------------------------------------------------------------------------*/
-
-
-
-@media screen and (max-width: 1560px) {
-
-/* --------section-four---------------- */
-
-    .section-four-div {
-        margin: 100px 0 0 50px;
-        grid-template-columns: repeat(4, 0.0fr);
-        gap: 10px;
+        margin-left: 122px;
     }
+}
 
-
-    .section-four-one h4 {
-        font-size: 22px;
+/* -------------------------------------------------------1560------------------------------------------------------- */
+@media screen and (max-width: 1560px) {
+    .section-four-div {
+        margin: 100px 0 0 5px;
+        grid-template-columns: repeat(4, 0.0fr);
+        gap: 15px;
     }
 
     .section-four-one p {
         font-size: 15px;
-
     }
 
-    .section-four-one-img {
-        display: grid;
-        grid-template-columns: repeat(3, 0.0fr);
+    .section-seven-img {
+        padding: 0 120px 0 0;
+    }
+}
+
+/* -------------------------------------------------------1368------------------------------------------------------- */
+@media screen and (max-width: 1370px) {
+    .container {
+        padding: 50px 80px;
+    }
+
+    .header-todo {
+        padding: 50px 200px;
+    }
+
+    .centro-header {
+        margin: 100px auto;
+    }
+
+    .section-two-div {
+        gap: 100px;
+        padding: 50px 120px;
+    }
+
+    .section-four-div {
+        margin: 100px 0 0 auto;
+        grid-template-columns: repeat(4, 0.0fr);
+        gap: 10px;
+    }
+
+    .section-four-one p {
+        font-size: 13px;
+    }
+
+    .section-five-div {
+        grid-template-columns: 55% 45%;
+    }
+
+    .section-seven-img {
+        margin-left: 115px;
+    }
+
+    footer {
+        height: 25vh;
+    }
+}
+
+/* -------------------------------------------------------1279------------------------------------------------------- */
+@media screen and (min-width: 1130px) and (max-width: 1279px) {
+    .container {
+        padding: 50px 20px;
+    }
+
+    .header-todo {
+        padding: 50px 180px;
+    }
+
+    .centro-header {
+        margin: 180px auto;
+    }
+
+    .section-two-div {
+        gap: 100px;
+        padding: 50px 110px;
+    }
+
+    .section-four-div {
+        margin: 100px 0 0 auto;
+        grid-template-columns: repeat(4, 0.0fr);
+        gap: 3px;
+    }
+
+    .section-four-one p {
+        font-size: 13px;
+    }
+
+    .section-five-div {
+        grid-template-columns: 55% 40%;
+    }
+
+    .section-five-img img {
+        width: 100%;
+    }
+
+    .section-five-text {
+        padding: 40px 0 0 110px;
+    }
+
+    .section-five-text p {
+        font-size: 1.6rem;
+    }
+
+    .section-five-p2 p {
+        font-size: 0.9rem;
+    }
+
+    .section-five-circle {
+        grid-template-columns: repeat(5, 0.0fr);
+        gap: 15px;
+        margin: 50px 100px;
+    }
+
+    .circle {
+        width: 15px;
+        height: 15px;
+    }
+
+    .section-seven-one p {
+        font-size: 15px;
+        padding: 0 70px;
+    }
+
+    footer {
+        height: 20vh;
+    }
+}
+
+/* -------------------------------------------------------1129------------------------------------------------------- */
+@media screen and (min-width: 800px) and (max-width: 1129px) {
+    .container {
+        padding: 50px 10px;
+    }
+
+    .header-todo {
+        padding: 50px 180px;
+        height: 120vh;
+    }
+
+    .nav-header {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .lu-header ul {
+        grid-template-columns: repeat(5, auto);
+        justify-content: space-around;
+    }
+
+    .imagen-header {
+        text-align: center;
+        padding: 0 0 50px 0;
+    }
+
+    .centro-header {
+        margin: 100px auto;
+    }
+
+    .section-two-div {
+        gap: 100px;
+        padding: 50px 110px;
+    }
+
+    .section-four-div {
+        margin: 100px 0 0 auto;
+        grid-template-columns: repeat(2, 0.0fr);
+        justify-content: center;
+        gap: 50px;
+    }
+
+    .section-four-one p {
+        font-size: 13px;
+    }
+
+    .section-five-div {
+        grid-template-columns: 55% 40%;
+    }
+
+    .section-five-img img {
+        width: 100%;
+    }
+
+    .section-five-text {
+        padding: 40px 0 0 110px;
+    }
+
+    .section-five-text p {
+        font-size: 1.6rem;
+    }
+
+    .section-five-p2 p {
+        font-size: 0.9rem;
+    }
+
+    .section-five-circle {
+        grid-template-columns: repeat(5, 0.0fr);
+        gap: 15px;
+        margin: 50px 100px;
+    }
+
+    .circle {
+        width: 15px;
+        height: 15px;
+    }
+
+    .section-seven-one p {
+        font-size: 15px;
+        padding: 0 70px;
+    }
+
+    footer {
+        height: 20vh;
+    }
+}
+
+/* -------------------------------------------------------1073------------------------------------------------------- */
+@media screen and (max-width: 1073px) {
+    .section-five-img img {
+        width: 110%;
+    }
+}
+
+@media screen and (max-width: 1033px) {
+    .section-five-div {
+        grid-template-columns: 50% 45%;
+    }
+
+    .section-five-img img {
+        width: 120%;
+    }
+}
+
+/* -------------------------------------------------------897------------------------------------------------------- */
+@media screen and (min-width: 800px) and (max-width: 895px) {
+    .container {
+        padding: 50px 10px;
+    }
+
+    .header-todo {
+        padding: 50px 120px;
+        height: 70vh;
+    }
+
+    .lu-header ul {
         gap: 20px;
     }
 
+    .centro-header {
+        margin: 120px auto;
+    }
+
+    .centro-header h1 {
+        font-size: 40px;
+    }
+
+    .section-two-div {
+        grid-template-columns: repeat(2, auto);
+    }
+
+    .section-four-div {
+        margin: 100px 0 0 auto;
+        grid-template-columns: repeat(2, 0.0fr);
+        justify-content: center;
+        gap: 50px;
+    }
+
+    .section-four-one p {
+        font-size: 13px;
+    }
+
+    .section-five-div {
+        grid-template-columns: 55% 40%;
+    }
+
+    .section-five-img img {
+        width: 100%;
+    }
+
+    .section-five-text {
+        padding: 40px 0 0 110px;
+    }
+
+    .section-five-text p {
+        font-size: 1rem;
+    }
+
+    .section-five-p2 p {
+        font-size: 0.6rem;
+    }
+
+    .section-five-circle {
+        grid-template-columns: repeat(5, 0.0fr);
+        gap: 15px;
+        margin: 50px auto;
+    }
+
+    .circle {
+        width: 15px;
+        height: 15px;
+    }
+
+    .section-seven-one p {
+        font-size: 15px;
+        padding: 0 70px;
+    }
+
+    .section-seven-div {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
+    }
+
+    .section-seven-one.seven {
+        margin-top: 50px;
+    }
+
+    footer {
+        height: 20vh;
+    }
+}
+
+/* -------------------------------------------------------799------------------------------------------------------- */
+@media screen and (min-width: 600px) and (max-width: 799px) {
+    .container {
+        padding: 50px 10px;
+    }
+
+    .header-todo {
+        padding: 50px 80px;
+        height: 90vh;
+    }
+
+    .nav-header {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .lu-header ul {
+        grid-template-columns: repeat(1, auto);
+        text-align: center;
+        gap: 50px;
+    }
+
+    .imagen-header {
+        text-align: center;
+        padding: 0 0 50px 0;
+    }
+
+    .centro-header {
+        margin: 100px auto;
+    }
+
+    .centro-header h1 {
+        font-size: 30px;
+    }
+
+    .centro-header a {
+        width: 30%;
+    }
+
+    .section-two-div {
+        grid-template-columns: repeat(1, auto);
+    }
+
+    .section-three-div {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .section-four-div {
+        margin: 100px 0 0 auto;
+        grid-template-columns: repeat(2, 0.0fr);
+        justify-content: center;
+        gap: 50px;
+    }
+
+    .section-four-one p {
+        font-size: 13px;
+    }
+
+    .section-five-div {
+        grid-template-columns: 55% 40%;
+    }
+
+    .section-five-img img {
+        width: 100%;
+    }
+
+    .section-five-text {
+        padding: 40px 0 0 50px;
+    }
+
+    .section-five-text p {
+        font-size: 1rem;
+    }
+
+    .section-five-p2 p {
+        font-size: 0.6rem;
+    }
+
+    .section-five-circle {
+        grid-template-columns: repeat(5, 0.0fr);
+        gap: 15px;
+        margin: 50px auto;
+    }
+
+    .circle {
+        width: 15px;
+        height: 15px;
+    }
+
+    .section-seven-one p {
+        font-size: 15px;
+        padding: 0 70px;
+    }
+
+    .section-seven-div {
+        grid-template-columns: repeat(1, 1fr);
+        gap: 50px;
+    }
+
+    .section-seven-img {
+        grid-template-columns: repeat(3, 0.1fr);
+        margin-left: 295px;
+    }
+
+    footer {
+        height: 30vh;
+    }
 }
 
 
+/* -------------------------------------------------------730 - 670------------------------------------------------------- */
 
-
-/*--------------------------------------------------------------------------------1368-------------------------------------------------------------------------------------*/
-
-
-
-@media screen and (max-width: 1560px) {
-.container {
-    padding: 50px 80px;
+@media screen and (max-width: 730px) {
+    .section-seven-img {
+        margin-left: 255px;
+    }
 }
 
-
-/* ------------------HEADER------------ */
-.header-todo {
-    padding: 50px 200px;
+@media screen and (max-width: 670px) {
+    .section-seven-img {
+        margin-left: 210px;
+    }
 }
 
+/* -------------------------------------------------------599------------------------------------------------------- */
 
-.centro-header {
-    margin: 100px auto;
+@media screen and (min-width: 352px) and (max-width: 599px) {
+    .container {
+        padding: 50px 10px;
+    }
+
+    .header-todo {
+        padding: 50px 80px;
+        height: 180vh;
+    }
+
+    .nav-header {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .lu-header ul {
+        grid-template-columns: repeat(1, auto);
+        text-align: center;
+        gap: 50px;
+    }
+
+    .imagen-header {
+        text-align: center;
+        padding: 0 0 50px 0;
+    }
+
+    .centro-header {
+        margin: 100px auto;
+    }
+
+    .centro-header h1 {
+        font-size: 20px;
+    }
+
+    .centro-header a {
+        width: 30%;
+    }
+
+    .section-two-div {
+        grid-template-columns: repeat(1, auto);
+    }
+
+    .section-three-div {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .section-four-div {
+        margin: 100px 0 0 auto;
+        grid-template-columns: repeat(1, 0.0fr);
+        justify-content: center;
+        gap: 50px;
+    }
+
+    .section-four-one p {
+        font-size: 13px;
+    }
+
+    .section-five-div {
+        grid-template-columns: repeat(1, auto);
+        width: 100%;
+    }
+
+    .section-five-img img {
+        width: 100%;
+    }
+
+    .section-five-text {
+        padding: 40px 100px;
+        color: #ffffff;
+    }
+
+    .section-five-text p {
+        font-size: 1.4rem;
+        font-family: 'Cardo';
+        font-style: italic;
+        line-height: 1.4;
+        margin-bottom: 20px;
+    }
+
+    .section-five-p2 p {
+        font-size: 1rem;
+        font-weight: bold;
+        font-family: "Open Sans", sans-serif;
+        font-style: normal;
+        text-transform: uppercase;
+    }
+
+    .circle {
+        width: 15px;
+        height: 15px;
+    }
+
+    .section-six-div h2 {
+        font-size: 20px;
+        padding: 0 50px;
+    }
+
+    .section-six-div p {
+        margin-bottom: 50px;
+        font-weight: bold;
+        padding: 0 90px;
+    }
+
+    .section-six-div a {
+        padding: 15px 40px;
+    }
+
+    .section-seven-one p {
+        font-size: 15px;
+        padding: 0 90px;
+    }
+
+    .section-seven-div {
+        grid-template-columns: repeat(1, 1fr);
+        gap: 50px;
+    }
+
+    .section-seven-img {
+        margin-left: 80px;
+    }
+
+    footer {
+        height: 40vh;
+    }
+
+    .footer-div {
+        padding: 0 90px;
+    }
 }
 
+@media screen and (min-width: 481px) and (max-width: 599px) {
+    .section-five-text p {
+        font-size: 2rem;
+    }
 
-/* ---------section-two----------------- */
+    .section-seven-one p {
+        font-size: 10px;
+    }
 
+    .section-seven-img {
+        margin-left: 150px;
+    }
 
-.section-two-div {
-    gap: 100px;
-    padding: 50px 120px;
-}
-
-/* --------section-five---------------- */
-
-
-.section-five-div {
-    grid-template-columns: 55% 45%;
-}
-
-
-/* ---------section-seven------------- */
-
-.section-seven-img {
-    display: grid;
-    grid-template-columns: repeat(3, 0.1fr);
-    gap: 10px;
-    margin-top: 20px;
-    margin-left: 115px;
-}
-
-/* --------section-footer------------- */
-
-footer {
-    background-color: #303555;
-    height: 25vh;
-}
-
+    footer {
+        height: 30vh;
+    }
 }
