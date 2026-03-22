@@ -75,7 +75,7 @@ main {
     text-align: center;
     color: #ffffff;
     position: relative;
-    margin: 220px auto;
+    margin: 150px auto;
 }
 
 .centro-header h1 {
@@ -715,7 +715,7 @@ footer {
 
     .header-todo {
         padding: 50px 80px;
-        height: 90vh;
+        height: 170vh;
     }
 
     .nav-header {
@@ -839,7 +839,7 @@ footer {
 
     .header-todo {
         padding: 50px 80px;
-        height: 180vh;
+        height: 170vh;
     }
 
     .nav-header {
@@ -858,7 +858,7 @@ footer {
     }
 
     .centro-header {
-        margin: 100px auto;
+        margin: 18px auto;
     }
 
     .centro-header h1 {
